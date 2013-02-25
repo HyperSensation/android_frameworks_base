@@ -105,7 +105,7 @@ public class CarrierLabel extends TextView {
             something = true;
         }
         if (something) {
-            setText(str.toString());
+            setText("");
         } else {
             setText(com.android.internal.R.string.lockscreen_carrier_default);
         }

@@ -33,8 +33,7 @@
     <com.android.internal.widget.DigitalClock android:id="@+id/time"
         android:layout_marginTop="@dimen/keyguard_lockscreen_status_line_clockfont_top_margin"
         android:layout_marginBottom="12dip"
-        android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin"
-        android:layout_gravity="right">
+        android:layout_gravity="center">
 
         <!-- Because we can't have multi-tone fonts, we render two TextViews, one on
         top of the other. Hence the redundant layout... -->
@@ -44,7 +43,7 @@
             android:singleLine="true"
             android:ellipsize="none"
             android:textSize="@dimen/keyguard_lockscreen_clock_font_size"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_marginBottom="6dip"
             android:textColor="@color/lockscreen_clock_background"
             />
@@ -55,7 +54,7 @@
             android:singleLine="true"
             android:ellipsize="none"
             android:textSize="@dimen/keyguard_lockscreen_clock_font_size"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_marginBottom="6dip"
             android:textColor="@color/lockscreen_clock_foreground"
             android:layout_alignLeft="@id/timeDisplayBackground"
@@ -66,8 +65,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_gravity="right"
-        android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin">
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/date"
@@ -95,8 +93,7 @@
 
     <TextView
         android:id="@+id/status1"
-        android:layout_gravity="right"
-        android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin"
+        android:layout_gravity="center"
         android:singleLine="true"
         android:ellipsize="marquee"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -321,6 +318,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="@dimen/keyguard_lockscreen_status_line_font_size"
             android:textColor="?android:attr/textColorSecondary"
+            android:visibility="gone"
             />
 
     </RelativeLayout>

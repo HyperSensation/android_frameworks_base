@@ -212,6 +212,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="@dimen/keyguard_lockscreen_status_line_font_size"
         android:textColor="?android:attr/textColorSecondary"
+	android:visibility="gone"
         />
 
     <Button

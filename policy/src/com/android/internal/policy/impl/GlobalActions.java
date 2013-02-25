@@ -229,7 +229,8 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                 }
             });
 
-        // next: profile
+        //* next: profile
+/*
         mItems.add(
             new ProfileChooseAction() {
                 public void onPress() {
@@ -244,8 +245,9 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                     return false;
                 }
             });
-
+*/
         // next: screenshot
+/*
         mItems.add(
             new SinglePressAction(com.android.internal.R.drawable.ic_lock_screenshot, R.string.global_action_screenshot) {
                 public void onPress() {
@@ -260,10 +262,11 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                     return true;
                 }
             });
-
+*/
         // next: airplane mode
+/*
         mItems.add(mAirplaneModeOn);
-
+*/
         // last: silent mode
         if (SHOW_SILENT_TOGGLE) {
             mItems.add(mSilentModeAction);
