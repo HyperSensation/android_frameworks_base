@@ -31,8 +31,7 @@
     <com.android.internal.widget.DigitalClock android:id="@+id/time"
         android:layout_marginTop="@dimen/keyguard_lockscreen_status_line_clockfont_top_margin"
         android:layout_marginBottom="@dimen/keyguard_lockscreen_status_line_clockfont_bottom_margin"
-        android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin"
-        android:layout_gravity="right">
+        android:layout_gravity="center">
 
         <!-- Because we can't have multi-tone fonts, we render two TextViews, one on
         top of the other. Hence the redundant layout... -->
@@ -60,8 +59,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_gravity="right"
-        android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin">
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/date"
@@ -90,8 +88,7 @@
 
     <TextView
         android:id="@+id/status1"
-        android:layout_gravity="right"
-        android:layout_marginRight="@dimen/keyguard_lockscreen_status_line_font_right_margin"
+        android:layout_gravity="center"
         android:singleLine="true"
         android:ellipsize="marquee"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -122,6 +119,7 @@
         android:ellipsize="marquee"
         android:textSize="@dimen/keyguard_lockscreen_status_line_font_size"
         android:textAppearance="?android:attr/textAppearanceMedium"
+	android:visibility="gone"
     />
 
     <!-- Footer: an emergency call button and an initially hidden "Forgot pattern" button -->
@@ -130,7 +128,8 @@
         android:layout_width="match_parent"
         style="?android:attr/buttonBarStyle"
         android:gravity="center"
-        android:weightSum="2">
+        android:weightSum="2"
+	android:visibility="gone">
 
         <Button android:id="@+id/emergencyCallButton"
             android:layout_gravity="center_horizontal"

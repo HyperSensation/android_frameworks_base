@@ -43,7 +43,7 @@
             android:singleLine="true"
             android:ellipsize="none"
             android:textSize="@dimen/keyguard_lockscreen_clock_font_size"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="6dip"
             android:textColor="@color/lockscreen_clock_background"
             />
@@ -54,7 +54,7 @@
             android:singleLine="true"
             android:ellipsize="none"
             android:textSize="@dimen/keyguard_lockscreen_clock_font_size"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="6dip"
             android:textColor="@color/lockscreen_clock_foreground"
             android:layout_alignLeft="@id/timeDisplayBackground"
